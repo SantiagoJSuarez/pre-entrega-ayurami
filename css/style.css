@@ -1,0 +1,159 @@
+* {
+  margin-left: 1 px;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+background-image: url(background/planta.png);
+background-position: center;
+background-size: cover;
+font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+}
+
+.logo1 {
+  width: 200px;
+}
+
+ul {
+  list-style: none;
+}
+.menu-contactanos {
+  background-color: #cbe8ba;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+.titulo-principal{
+  background-color: rgb(154, 209, 72);
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+}
+
+
+/* Index  ---------------------------------------------------------------------- */
+
+section article .local {
+  border-style: solid;
+  border-color: orange;
+  border-width: 20px;
+
+  border-radius: 20px;
+  border-width: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nov1 {
+  background-color: lightsalmon;
+}
+
+section article .imgnov1 {
+  border-style: solid;
+  border-color: lightcoral;
+}
+
+.nov2 {
+  background-color: lightpink;
+}
+
+.derechos {
+  text-align: center;
+}
+
+.siguenos {
+  text-align: end;
+}
+
+footer {
+  background-color: #cbe8ba;
+}
+
+footer div .logo-footer {
+  border-radius: 100px;
+}
+
+/* Sobre nosotros  ---------------------------------------------------------------------- */
+
+
+.titulos-sn {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+.sobre-nosotros-contenido {
+  background-image:url(background/verde.png) ;
+  background-position: center;
+  background-size: cover;
+}
+
+.negocio-img {
+  width: 500px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 20px;
+  
+}
+
+/* Productos  ---------------------------------------------------------------------- */
+
+
+
+main .section-productos{
+  background-image: url(background/planta.png);
+  background-position: center;
+  background-size: cover;
+}
+
+section .producto {
+  margin-top: 30px;
+  width: 200px;
+  border-radius: 20px;
+  border-color: lime;
+  border-style: solid;
+}
+
+/* Mas Pedidos  ---------------------------------------------------------------------- */
+
+ .img-pedido{
+  width: 200px ;
+  height: 200px;
+}
+
+main .background-pedido{
+  background-color: lightblue;
+  margin:20px;
+}
+
+/* Contactanos  ---------------------------------------------------------------------- */
+
+article .mapa{
+  border-style: solid;
+  border-color: lightsalmon;
+  border-width: 10px;
+}
+
+article .contacto-local{
+width: 500px;
+border-style: solid;
+border-color: orangered;
+border-radius: 20px;
+}

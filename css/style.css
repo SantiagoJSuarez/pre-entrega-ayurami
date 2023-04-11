@@ -1,22 +1,21 @@
 * {
-  margin-left: 1 px;
+  margin: 0;
   padding: 0;
 }
-
 a {
   text-decoration: none;
 }
 
+/* Menu */
 header {
-background-image: url(background/planta.png);
-background-position: center;
-background-size: cover;
-font-size: 15px;
+  background-image: url(../img/background/planta.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 15px;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   display: flex;
   justify-content: space-between;
-
 }
 
 .nav-list {
@@ -38,13 +37,12 @@ ul {
   font-style: italic;
 }
 
-.titulo-principal{
+.titulo-principal {
   background-color: rgb(154, 209, 72);
   text-align: center;
   font-style: italic;
   font-size: 30px;
 }
-
 
 /* Index  ---------------------------------------------------------------------- */
 
@@ -92,7 +90,6 @@ footer div .logo-footer {
 
 /* Sobre nosotros  ---------------------------------------------------------------------- */
 
-
 .titulos-sn {
   color: white;
   text-align: center;
@@ -100,7 +97,7 @@ footer div .logo-footer {
 }
 
 .sobre-nosotros-contenido {
-  background-image:url(background/verde.png) ;
+  background-image: url(background/verde.png);
   background-position: center;
   background-size: cover;
 }
@@ -110,14 +107,11 @@ footer div .logo-footer {
   border-color: white;
   border-style: solid;
   border-radius: 20px;
-  
 }
 
 /* Productos  ---------------------------------------------------------------------- */
 
-
-
-main .section-productos{
+main .section-productos {
   background-image: url(background/planta.png);
   background-position: center;
   background-size: cover;
@@ -133,27 +127,27 @@ section .producto {
 
 /* Mas Pedidos  ---------------------------------------------------------------------- */
 
- .img-pedido{
-  width: 200px ;
+.img-pedido {
+  width: 200px;
   height: 200px;
 }
 
-main .background-pedido{
+main .background-pedido {
   background-color: lightblue;
-  margin:20px;
+  margin: 20px;
 }
 
 /* Contactanos  ---------------------------------------------------------------------- */
 
-article .mapa{
+article .mapa {
   border-style: solid;
   border-color: lightsalmon;
   border-width: 10px;
 }
 
-article .contacto-local{
-width: 500px;
-border-style: solid;
-border-color: orangered;
-border-radius: 20px;
+article .contacto-local {
+  width: 500px;
+  border-style: solid;
+  border-color: orangered;
+  border-radius: 20px;
 }

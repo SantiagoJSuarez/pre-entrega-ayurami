@@ -5,8 +5,17 @@
 a {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
+p {
+  padding: 5px;
+}
+main {
+  margin-bottom: 5px;
+}
 
-/* Menu */
+/* Menu  ---------------------------------------------------------------------- */
 header {
   background-image: url(../img/background/planta.png);
   background-position: center;
@@ -19,57 +28,49 @@ header {
 }
 
 .nav-list {
+  padding: 20px;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
-.logo1 {
-  width: 200px;
+.header__logo {
+  width: 50%;
+  height: 100%;
+  border-style: dashed;
 }
 
-ul {
-  list-style: none;
-}
-.menu-contactanos {
-  background-color: #cbe8ba;
-  font-size: 15px;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-}
-
-.titulo-principal {
+.section__tituloprincipal {
   background-color: rgb(154, 209, 72);
   text-align: center;
   font-style: italic;
   font-size: 30px;
+  margin-bottom: 5px;
 }
 
 /* Index  ---------------------------------------------------------------------- */
 
-section article .local {
+.inicio__local {
   border-style: solid;
   border-color: orange;
   border-width: 20px;
 
   border-radius: 20px;
   border-width: 20px;
-
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
-.nov1 {
-  background-color: lightsalmon;
-}
-
-section article .imgnov1 {
+.novedades__tarjeta {
   border-style: solid;
-  border-color: lightcoral;
+  width: 50%;
+  text-align: center;
+  margin: 5px;
 }
 
-.nov2 {
-  background-color: lightpink;
+.inicio__local {
+  width: 50%;
+}
+
+.inicio__imgnovedades {
+  width: 50%;
 }
 
 .derechos {
@@ -90,19 +91,19 @@ footer div .logo-footer {
 
 /* Sobre nosotros  ---------------------------------------------------------------------- */
 
-.titulos-sn {
+.sobrenosotros {
+  background-image: url(../img/background/verde.png);
+  background-position: center;
+  background-size: cover;
+}
+.sobrenosotros__tituloarticulo {
   color: white;
+  padding: 20px;
   text-align: center;
   font-style: italic;
 }
 
-.sobre-nosotros-contenido {
-  background-image: url(background/verde.png);
-  background-position: center;
-  background-size: cover;
-}
-
-.negocio-img {
+.article__imgnegocio {
   width: 500px;
   border-color: white;
   border-style: solid;
@@ -111,13 +112,21 @@ footer div .logo-footer {
 
 /* Productos  ---------------------------------------------------------------------- */
 
-main .section-productos {
+.section-productos {
   background-image: url(background/planta.png);
   background-position: center;
   background-size: cover;
 }
 
-section .producto {
+.productos__tarjeta {
+  width: 20%;
+  border-style: solid;
+  border-radius: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+.productos__imagen {
   margin-top: 30px;
   width: 200px;
   border-radius: 20px;
@@ -126,26 +135,31 @@ section .producto {
 }
 
 /* Mas Pedidos  ---------------------------------------------------------------------- */
+.pedidos__descripcion {
+  text-align: center;
+}
 
-.img-pedido {
+.pedidos__imgpedido {
   width: 200px;
   height: 200px;
 }
-
-main .background-pedido {
+.pedidos__article {
   background-color: lightblue;
-  margin: 20px;
+  margin: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 /* Contactanos  ---------------------------------------------------------------------- */
 
-article .mapa {
+.contactanos__mapa {
   border-style: solid;
   border-color: lightsalmon;
   border-width: 10px;
 }
 
-article .contacto-local {
+.contactanos_local {
   width: 500px;
   border-style: solid;
   border-color: orangered;

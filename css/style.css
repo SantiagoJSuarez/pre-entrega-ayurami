@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -18,7 +19,7 @@ main {
 
 /* Menu  ---------------------------------------------------------------------- */
 header {
-  background-image: url(../img/background/planta.png);
+  background-image: url(../img/background/degradado.jpg);
   background-position: center;
   background-size: cover;
 
@@ -30,13 +31,13 @@ header {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .nav-list {
   padding: 20px;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 
   font-size: 2rem;
 }
@@ -47,6 +48,19 @@ header {
   border-style: dashed;
 }
 
+.header__logo {
+  width: 100%;
+
+  border-style: solid;
+}
+
+/* Index  ---------------------------------------------------------------------- */
+
+.main-index {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
 .section__tituloprincipal {
   background-color: rgb(154, 209, 72);
   text-align: center;
@@ -55,16 +69,15 @@ header {
   margin-bottom: 5px;
 }
 
-/* Index  ---------------------------------------------------------------------- */
-
-.inicio {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
+.index {
+  background-color: lightgreen;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
-.inicio__descripcion {
-  background-color: lightgreen;
+.novedades {
+  background-color: lightcoral;
 }
 
 .novedades__targeta__img {
@@ -76,15 +89,15 @@ header {
 .inicio__imglocal {
   border-style: solid;
   border-color: orange;
-  border-width: 10px;
-  width: 50%;
+  width: 100%;
   margin: 5px;
-
-  border-radius: 20px;
-  border-width: 20px;
+  border-radius: 50px;
+  border-width: 10px;
 }
 
 .novedades__tarjeta {
+  display: flex;
+  flex-flow: row wrap;
   border-style: solid;
   width: 500px;
   text-align: center;
@@ -194,7 +207,6 @@ article .article__imgnegocio {
 .pedidos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  flex-flow: column wrap;
 }
 
 .pedidos__descripcion {
@@ -237,4 +249,45 @@ article .article__imgnegocio {
   border-color: orangered;
   border-radius: 20px;
   margin: 20px;
+}
+
+/* Mediaquerie Mobile */
+@media (min-width: 375px) and (max-width: 767px) {
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+/*Mobile Inicio*/
+  .main-index {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .inicio__imglocal {
+    width: 100%;
+  }
+  
+  .novedades {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  /*Mobile Mas Pedidos*/
+  .pedidos{
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+/* Mediaquerie Desktop */
+
+@media (min-width: 1201px) {
+  .nav-list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .inicio {
+    display: flex;
+    flex-flow: column wrap;
+  }
 }

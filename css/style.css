@@ -30,6 +30,7 @@ header {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .nav-list {
@@ -59,14 +60,11 @@ header {
 .inicio {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 350px 350px;
   gap: 20px;
-  height: 96vh;
-
 }
 
 .inicio__descripcion {
-  background-color: greenyellow;
+  background-color: lightgreen;
 }
 
 .novedades__targeta__img {
@@ -75,10 +73,10 @@ header {
   justify-content: space-between;
 }
 
-.inicio__local {
+.inicio__imglocal {
   border-style: solid;
   border-color: orange;
-  border-width: 20px;
+  border-width: 10px;
   width: 50%;
   margin: 5px;
 
@@ -129,7 +127,6 @@ footer div .logo-footer {
   background-image: url(../img/background/verde.png);
   background-position: center;
   background-size: cover;
-  height: 96vh;
 }
 
 .sobrenosotros__tituloarticulo {
@@ -161,12 +158,11 @@ article .article__imgnegocio {
   background-size: cover;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
 
   display: flex;
-  flex-flow: row wrap ;
- 
+  flex-flow: row wrap;
 }
 .producto__lista li {
   padding: 5px 5px;

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -49,15 +50,23 @@ header {
   background-color: rgb(154, 209, 72);
   text-align: center;
   font-style: italic;
-  font-size: 30px;
+  font-size: 2rem;
   margin-bottom: 5px;
 }
 
 /* Index  ---------------------------------------------------------------------- */
 
-.novedades {
-  display: flex;
-  flex-flow: row wrap;
+.inicio {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 350px 350px;
+  gap: 20px;
+  height: 96vh;
+
+}
+
+.inicio__descripcion {
+  background-color: greenyellow;
 }
 
 .novedades__targeta__img {
@@ -82,11 +91,15 @@ header {
   width: 500px;
   text-align: center;
   margin: 5px;
+  background-color: orange;
 }
 
 .novedades__titulo {
-  text-align: center;
-  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
   font-style: italic;
 }
 
@@ -146,13 +159,14 @@ article .article__imgnegocio {
   background-image: url(../img/background/planta.png);
   background-position: center;
   background-size: cover;
-  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  gap: 20px;
 
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  align-content: space-between;
+  flex-flow: row wrap ;
+ 
 }
 .producto__lista li {
   padding: 5px 5px;
@@ -163,7 +177,13 @@ article .article__imgnegocio {
   border-style: solid;
   border-radius: 20px;
   margin: 5px;
-  text-align: center;
+
+  font-size: 1.5rem;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .productos__imagen {
@@ -176,12 +196,15 @@ article .article__imgnegocio {
 
 /* Mas Pedidos  ---------------------------------------------------------------------- */
 .pedidos {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   flex-flow: column wrap;
 }
 
 .pedidos__descripcion {
   text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
 }
 .pedidos__imgpedido {
   width: 200px;
@@ -200,12 +223,11 @@ article .article__imgnegocio {
 }
 
 /* Contactanos  ---------------------------------------------------------------------- */
-.contactanos{
+.contactanos {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  
 }
 .contactanos__mapa {
   border-style: solid;

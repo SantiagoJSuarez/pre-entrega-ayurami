@@ -48,10 +48,12 @@ header {
   border-style: dashed;
 }
 
-.header__logo {
-  width: 100%;
-
-  border-style: solid;
+.section__tituloprincipal {
+  background-color: rgb(154, 209, 72);
+  text-align: center;
+  font-style: italic;
+  font-size: 2rem;
+  margin-bottom: 5px;
 }
 
 /* Index  ---------------------------------------------------------------------- */
@@ -59,14 +61,6 @@ header {
 .main-index {
   display: grid;
   grid-template-columns: 2fr 1fr;
-}
-
-.section__tituloprincipal {
-  background-color: rgb(154, 209, 72);
-  text-align: center;
-  font-style: italic;
-  font-size: 2rem;
-  margin-bottom: 5px;
 }
 
 .index {
@@ -77,27 +71,21 @@ header {
 }
 
 .novedades {
-  background-color: lightcoral;
-}
-
-.novedades__targeta__img {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: column wrap;
+  background-color: lightcoral;
 }
 
 .inicio__imglocal {
   border-style: solid;
   border-color: orange;
-  width: 100%;
+  width: 90%;
   margin: 5px;
   border-radius: 50px;
-  border-width: 10px;
+  border-width: 5px;
 }
 
 .novedades__tarjeta {
-  display: flex;
-  flex-flow: row wrap;
   border-style: solid;
   width: 500px;
   text-align: center;
@@ -105,33 +93,35 @@ header {
   background-color: orange;
 }
 
-.novedades__titulo {
+/* .novedades__titulo {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   font-size: 2rem;
   font-style: italic;
-}
+} */
 
 .inicio__imgnovedades {
   width: 200px;
 }
 
-.derechos {
-  text-align: center;
-}
-
 .siguenos {
-  text-align: end;
+  text-align: justify;
+  padding-left: 10px;
 }
 
 footer {
   background-color: #cbe8ba;
 }
+.derechos {
+  text-align: center;
+  font-size: 1rem;
+}
 
-footer div .logo-footer {
-  border-radius: 100px;
+.logo-footer {
+  border-radius: 10px;
+  width: 200px;
 }
 
 /* Sobre nosotros  ---------------------------------------------------------------------- */
@@ -253,11 +243,13 @@ article .article__imgnegocio {
 
 /* Mediaquerie Mobile */
 @media (min-width: 375px) and (max-width: 767px) {
+  /*Mobile Navbar*/
+
   .nav-list {
     display: flex;
     flex-direction: column;
   }
-/*Mobile Inicio*/
+  /*Mobile Inicio*/
   .main-index {
     display: flex;
     flex-flow: row wrap;
@@ -265,16 +257,17 @@ article .article__imgnegocio {
   .inicio__imglocal {
     width: 100%;
   }
-  
-  .novedades {
-    display: flex;
-    flex-flow: column wrap;
-  }
 
   /*Mobile Mas Pedidos*/
-  .pedidos{
+  .pedidos {
     display: flex;
     flex-flow: row wrap;
+  }
+
+  .pedidos__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

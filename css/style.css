@@ -72,26 +72,28 @@ header {
 
 .novedades {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   background-color: lightcoral;
+  width: 100%;
 }
 
 .inicio__imglocal {
   border-style: solid;
   border-color: orange;
-  width: 90%;
-  margin: 5px;
+  width: 50%;
   border-radius: 50px;
   border-width: 5px;
 }
 
 .novedades__tarjeta {
   border-style: solid;
-  width: 500px;
+  width: 100%;
   text-align: center;
   margin: 5px;
   background-color: orange;
 }
+
+
 
 /* .novedades__titulo {
   display: flex;
@@ -103,12 +105,7 @@ header {
 } */
 
 .inicio__imgnovedades {
-  width: 200px;
-}
-
-.siguenos {
-  text-align: justify;
-  padding-left: 10px;
+  width: 50%;
 }
 
 footer {
@@ -121,7 +118,12 @@ footer {
 
 .logo-footer {
   border-radius: 10px;
-  width: 200px;
+  width: 20%;
+}
+
+.siguenos {
+  text-align: justify;
+  padding-left: 10px;
 }
 
 /* Sobre nosotros  ---------------------------------------------------------------------- */
@@ -140,7 +142,7 @@ footer {
 }
 
 article .article__imgnegocio {
-  width: 500px;
+  width: 50%;
   border-color: white;
   border-style: solid;
   border-radius: 20px;
@@ -228,27 +230,29 @@ article .article__imgnegocio {
   align-items: center;
 }
 .contactanos__mapa {
+  width: 100%;
   border-style: solid;
   border-color: lightsalmon;
   border-width: 10px;
 }
 
 .contactanos_local {
-  width: 500px;
+  width: 90%;
   border-style: solid;
   border-color: orangered;
   border-radius: 20px;
-  margin: 20px;
+  margin: 5px;
 }
 
 /* Mediaquerie Mobile */
-@media (min-width: 375px) and (max-width: 767px) {
+@media (min-width: 372px) and (max-width: 767px) {
   /*Mobile Navbar*/
 
   .nav-list {
     display: flex;
     flex-direction: column;
   }
+
   /*Mobile Inicio*/
   .main-index {
     display: flex;
@@ -258,22 +262,28 @@ article .article__imgnegocio {
     width: 100%;
   }
 
-  /*Mobile Mas Pedidos*/
-  .pedidos {
-    display: flex;
-    flex-flow: row wrap;
-  }
-
   .pedidos__article {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  /*Mobile Sobre nosotors*/
+
+  /*Mobile Pedidos*/
+
+  /*Mobile Mas Pedidos*/
+  .pedidos {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  /*Mobile Contactanos*/
 }
 
 /* Mediaquerie Desktop */
 
-@media (min-width: 1201px) {
+@media (min-width: 768px) {
   .nav-list {
     display: flex;
     flex-flow: row wrap;
@@ -283,4 +293,11 @@ article .article__imgnegocio {
     display: flex;
     flex-flow: column wrap;
   }
+
+
+    /*Desktop Mas Pedidos*/
+    .pedidos {
+      display: flex;
+      flex-flow: row wrap;
+    }
 }

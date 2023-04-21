@@ -245,7 +245,7 @@ article .article__imgnegocio {
 }
 
 /* Mediaquerie Mobile */
-@media (min-width: 372px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   /*Mobile Navbar*/
 
   .nav-list {

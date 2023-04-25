@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+p {
+  padding: 5px;
+}
+main {
+  margin-bottom: 5px;
+}
+
+/* Menu  ---------------------------------------------------------------------- */
+header {
+  background-image: url(../img/background/degradado.jpg);
+  background-position: center;
+  background-size: cover;
+
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  font-size: 2rem;
+}
+
+.header__logo {
+  width: 100%;
+  height: 100%;
+  border-style: dashed;
+}
+
+.section__tituloprincipal {
+  background-color: rgb(154, 209, 72);
+  text-align: center;
+  font-style: italic;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+/* Index  ---------------------------------------------------------------------- */
+
+.main-index {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.index {
+  background-color: lightgreen;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.novedades {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: lightcoral;
+  width: 100%;
+}
+
+.inicio__imglocal {
+  border-style: solid;
+  border-color: orange;
+  width: 50%;
+  border-radius: 50px;
+  border-width: 5px;
+}
+
+.novedades__tarjeta {
+  border-style: solid;
+  width: 100%;
+  text-align: center;
+  margin: 5px;
+  background-color: orange;
+}
+
+/* .novedades__titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  font-style: italic;
+} */
+
+.inicio__imgnovedades {
+  width: 50%;
+}
+
+footer {
+  background-color: #cbe8ba;
+}
+.derechos {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.logo-footer {
+  border-radius: 10px;
+  width: 20%;
+}
+
+.siguenos {
+  text-align: justify;
+  padding-left: 10px;
+}
+
+/* Sobre nosotros  ---------------------------------------------------------------------- */
+
+.sobrenosotros {
+  background-image: url(../img/background/verde.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.sobrenosotros__tituloarticulo {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+article .article__imgnegocio {
+  width: 50%;
+  border-color: white;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+.articulo2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Productos  ---------------------------------------------------------------------- */
+
+.productos {
+  background-image: url(../img/background/planta.png);
+  background-position: center;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+.producto__lista li {
+  padding: 5px 5px;
+}
+.productos__tarjeta {
+  width: 400px;
+  height: 400px;
+  border-style: solid;
+  border-radius: 20px;
+  margin: 5px;
+
+  font-size: 1.5rem;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.productos__imagen {
+  margin-top: 30px;
+  width: 200px;
+  border-radius: 20px;
+  border-color: lime;
+  border-style: solid;
+}
+
+/* Mas Pedidos  ---------------------------------------------------------------------- */
+.pedidos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pedidos__descripcion {
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.pedidos__imgpedido {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.pedidos__article {
+  background-color: lightblue;
+  margin: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Contactanos  ---------------------------------------------------------------------- */
+.contactanos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contactanos__mapa {
+  width: 100%;
+  border-style: solid;
+  border-color: lightsalmon;
+  border-width: 10px;
+}
+
+.contactanos_local {
+  width: 90%;
+  border-style: solid;
+  border-color: orangered;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+/* Mediaquerie Mobile */
+@media (min-width: 300px) and (max-width: 767px) {
+  /*Mobile Navbar*/
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*Mobile Inicio*/
+  .main-index {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .inicio__imglocal {
+    width: 100%;
+  }
+
+  .pedidos__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*Mobile Sobre nosotors*/
+
+  /*Mobile Pedidos*/
+
+  /*Mobile Mas Pedidos*/
+  .pedidos {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  /*Mobile Contactanos*/
+}
+
+/* Mediaquerie Desktop */
+
+@media (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .inicio {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  /*Desktop Mas Pedidos*/
+  .pedidos {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+}
+

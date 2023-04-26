@@ -79,7 +79,7 @@ header {
 
 .inicio__imglocal {
   border-style: solid;
-  border-color: orange;
+  border-color: blue;
   width: 50%;
   border-radius: 50px;
   border-width: 5px;
@@ -105,6 +105,9 @@ header {
 .inicio__imgnovedades {
   width: 50%;
 }
+
+
+
 
 footer {
   background-color: #cbe8ba;

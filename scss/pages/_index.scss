@@ -1,3 +1,44 @@
-h1{
-    color: red;
+/* Inicio  ---------------------------------------------------------------------- */
+.main-index {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  &__descripcion {
+    background-color: $color-secundario;
+    font-size: $tamaño-texto;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  &__imgnegocio {
+    box-shadow: 5px 7px #977a50;
+    width: 80%;
+    border-radius: 50px;
+    border-width: 5px;
+    margin-left: 4px;
+  }
+  &__novedades {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #d5b7a7;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    &__titulo {
+      font-size: $tamaño-titulo;
+      font-style: italic;
+      text-shadow: 1px 1px white;
+    }
+
+    &__targeta {
+      border-style: solid;
+      width: 95%;
+      text-align: center;
+      margin: 5px;
+      background-color: $color-terciario;
+    }
+    &__imgnovedades {
+      width: 40%;
+      margin-bottom: 5px;
+    }
+  }
 }

@@ -1,0 +1,27 @@
+$color-primario: #5cac7c;
+$color-secundario: #b2baae;
+$color-terciario: #a59052;
+$color-titulos:#b6a373;
+
+
+$tamaño-titulo: 2rem;
+$tamaño-texto: 1rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+p {
+  padding: 5px;
+}
+main {
+  margin-bottom: 5px;
+}

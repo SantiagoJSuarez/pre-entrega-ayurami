@@ -23,6 +23,8 @@ main {
 /* Menu  ---------------------------------------------------------------------- */
 header {
   background-color: #5cac7c;
+  background-position: center;
+  background-size: cover;
   font-size: 15px;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
@@ -37,7 +39,6 @@ header .header__logo {
   border-style: groove;
 }
 header .nav__list {
-  padding: 20px;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -111,31 +112,20 @@ header .nav__item__texto:hover {
 }
 
 /* Mediaquerie Mobile */
-@media (min-width: 300px) and (max-width: 767px) {
+@media (min-width: 300px) {
   /*Mobile Navbar*/
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .nav__list {
     display: flex;
     flex-direction: column;
+    background-color: black;
   }
-  .nav__item__texto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  /*Mobile Inicio*/
   .main-index {
     display: flex;
     flex-direction: column;
   }
   .main-index__imgnegocio {
-    width: 50%;
-    box-shadow: none;
-    margin: 10px;
+    width: 70%;
+    box-shadow: 4px 1px #977a50;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,34 @@
+//Productos mas pedidos.
+.descripcion {
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  text-shadow: 1px 1px 1px orange;
+}
+
+.pedidos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__articulo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+    
+    background-color: lightblue;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 20px;
+
+  
+
+    &__img {
+      width: 200px;
+      height: 200px;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+  }
+}

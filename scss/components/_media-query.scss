@@ -1,5 +1,5 @@
 /* Mediaquerie Mobile */
-@media (min-width: 300px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 480px) {
   //Header*/
   header {
     display: flex;
@@ -45,10 +45,23 @@
       }
     }
   }
+
+  // Productos mas pedidos
+  .pedidos {
+    display: flex;
+    flex-flow: column wrap;
+
+    &__articulo {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 //Media Query : Tablet
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 481px) and (max-width: 768px) {
   //Header
   header {
     display: flex;
@@ -58,7 +71,8 @@
 
   .nav__list {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
   // Inicio
   .main-index {
@@ -80,14 +94,15 @@
       border-style: solid;
     }
   }
-
+  //sobre nosotros
   .sobrenosotros {
     display: flex;
     flex-direction: column;
 
     &__articulo2 {
       display: flex;
-      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
 
       &__img {
         width: 90%;
@@ -97,11 +112,23 @@
       }
     }
   }
+
+  //Productos mas pedidos
+  .pedidos {
+    display: flex;
+    flex-flow: column wrap;
+
+    &__articulo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 //Media Query : Desktop
 
-@media (min-width: 992px) and (max-width: 1999px) {
+@media (min-width: 1025px) and (max-width: 1200px) {
   // .sobrenosotros {
   //   display: flex;
   //   flex-direction: row;

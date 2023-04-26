@@ -1,22 +1,20 @@
 /* Mediaquerie Mobile */
 @media (min-width: 300px) and (max-width: 767px) {
   /*Mobile Navbar*/
-header{
+  header {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
   .nav__list {
     display: flex;
     flex-direction: column;
   }
-  .nav__item__texto
-  {
+  .nav__item__texto {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
 
   //   /*Mobile Inicio*/
   .main-index {
@@ -37,3 +35,43 @@ header{
 }
 //   }
 // }
+
+//Media Query : Tablet
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-index {
+    display: flex;
+    flex-direction: column;
+
+    &__descripcion {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__imgnegocio {
+      width: 50%;
+      box-shadow: none;
+      margin: 10px;
+      border-color: $color-terciario;
+      border-style: solid;
+    }
+  }
+}
+
+//Media Query : Desktop
+
+@media (min-width: 992px) and (max-width: 1999px) {
+    
+}

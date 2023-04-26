@@ -35,6 +35,7 @@ header .header__logo {
   width: 100%;
   height: 100%;
   border-style: groove;
+  border-radius: 20px;
 }
 header .nav__list {
   padding: 20px;
@@ -58,6 +59,30 @@ header .nav__item__texto:hover {
   color: #4a9ab1;
 }
 
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #5cac7c;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__derechos {
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.footer__logo {
+  border-radius: 10px;
+  box-shadow: 10px 2px 1px #a59052;
+  width: 100%;
+}
+
+.footer__siguenos {
+  padding-right: 20px;
+}
+
 /* Titulo principal de las paginas  ---------------------------------------------------------------------- */
 .titulo-principal {
   background-color: #b6a373;
@@ -72,6 +97,7 @@ header .nav__item__texto:hover {
 .main-index {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  background-color: #a59052;
 }
 .main-index__descripcion {
   background-color: #b2baae;
@@ -88,9 +114,9 @@ header .nav__item__texto:hover {
 }
 .main-index__novedades {
   display: flex;
-  flex-flow: column wrap;
-  background-color: #d5b7a7;
+  flex-flow: row wrap;
   justify-content: center;
+  background-color: #d5b7a7;
   margin-bottom: 10px;
 }
 .main-index__novedades__titulo {
@@ -135,6 +161,34 @@ header .nav__item__texto:hover {
     width: 50%;
     box-shadow: none;
     margin: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-index {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-index__descripcion {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-index__imgnegocio {
+    width: 50%;
+    box-shadow: none;
+    margin: 10px;
+    border-color: #a59052;
+    border-style: solid;
   }
 }
 

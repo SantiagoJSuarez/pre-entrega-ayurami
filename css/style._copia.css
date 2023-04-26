@@ -106,9 +106,6 @@ header {
   width: 50%;
 }
 
-
-
-
 footer {
   background-color: #cbe8ba;
 }
@@ -300,6 +297,4 @@ article .article__imgnegocio {
     display: flex;
     flex-flow: row wrap;
   }
-  
 }
-

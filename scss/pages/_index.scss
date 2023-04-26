@@ -2,6 +2,7 @@
 .main-index {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  background-color: $color-terciario;
 
   &__descripcion {
     background-color: $color-secundario;
@@ -16,11 +17,14 @@
     border-width: 5px;
     margin-left: 4px;
   }
+
   &__novedades {
     display: flex;
-    flex-flow: column wrap;
-    background-color: #d5b7a7;
+    flex-flow: row wrap;
     justify-content: center;
+    background-color: #d5b7a7;
+    
+
     margin-bottom: 10px;
 
     &__titulo {

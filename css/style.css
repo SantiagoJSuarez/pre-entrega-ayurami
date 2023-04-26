@@ -231,7 +231,7 @@ footer {
   justify-items: center;
   align-items: center;
   background-color: lightblue;
-  margin: 10px;
+  margin: 5px;
   border-style: solid;
   border-radius: 10px;
   padding: 20px;
@@ -239,8 +239,30 @@ footer {
 .pedidos__articulo__img {
   width: 200px;
   height: 200px;
-  margin-right: 10px;
+  margin-right: 5px;
   border-radius: 10px;
+}
+
+.contactanos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactanos__mapa {
+  width: 100%;
+  border-style: solid;
+  border-color: lightsalmon;
+  border-width: 10px;
+}
+
+.contactanos_local {
+  width: 90%;
+  border-style: solid;
+  border-color: orangered;
+  border-radius: 20px;
+  margin: 5px;
 }
 
 /* Mediaquerie Mobile */
@@ -337,13 +359,29 @@ footer {
     border-radius: 20px;
   }
   .pedidos {
-    display: flex;
-    flex-flow: column wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: blue;
   }
   .pedidos__articulo {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 1300px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .pedidos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

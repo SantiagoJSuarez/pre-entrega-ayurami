@@ -1,6 +1,6 @@
 /* Mediaquerie Mobile */
 @media (min-width: 300px) and (max-width: 767px) {
-  /*Mobile Navbar*/
+  //Header*/
   header {
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@
     align-items: center;
   }
 
-  //   /*Mobile Inicio*/
+  //  Inicio*/
   .main-index {
     display: flex;
     flex-direction: column;
@@ -27,17 +27,29 @@
       margin: 10px;
     }
   }
+  //Sobre nosotros
 
-  //     // &__novedades {
-  //     //   display: flex;
-  //     //   flex-flow: column wrap;
-  //     // }
+  .sobrenosotros {
+    display: flex;
+    flex-direction: column;
+
+    &__articulo2 {
+      display: flex;
+      flex-flow: column wrap;
+
+      &__img {
+        width: 90%;
+        border-color: white;
+        border-style: solid;
+        border-radius: 20px;
+      }
+    }
+  }
 }
-//   }
-// }
 
 //Media Query : Tablet
 @media (min-width: 768px) and (max-width: 991px) {
+  //Header
   header {
     display: flex;
     justify-content: center;
@@ -48,7 +60,7 @@
     display: flex;
     flex-direction: row;
   }
-
+  // Inicio
   .main-index {
     display: flex;
     flex-direction: column;
@@ -68,10 +80,42 @@
       border-style: solid;
     }
   }
+
+  .sobrenosotros {
+    display: flex;
+    flex-direction: column;
+
+    &__articulo2 {
+      display: flex;
+      flex-flow: column wrap;
+
+      &__img {
+        width: 90%;
+        border-color: white;
+        border-style: solid;
+        border-radius: 20px;
+      }
+    }
+  }
 }
 
 //Media Query : Desktop
 
 @media (min-width: 992px) and (max-width: 1999px) {
-    
+  // .sobrenosotros {
+  //   display: flex;
+  //   flex-direction: row;
+
+  //   &__articulo2 {
+  //     display: flex;
+  //     flex-flow: column wrap;
+
+  //     &__img {
+  //       width: 90%;
+  //       border-color: white;
+  //       border-style: solid;
+  //       border-radius: 20px;
+  //     }
+  //   }
+  // }
 }

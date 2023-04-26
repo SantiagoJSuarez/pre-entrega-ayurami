@@ -1,8 +1,7 @@
 $color-primario: #5cac7c;
 $color-secundario: #b2baae;
 $color-terciario: #a59052;
-$color-titulos:#b6a373;
-
+$color-titulos: #b6a373;
 
 $tamaño-titulo: 2rem;
 $tamaño-texto: 1rem;
@@ -24,4 +23,12 @@ p {
 }
 main {
   margin-bottom: 5px;
+}
+
+body{
+  position: relative;
+  padding-bottom: 2,5em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

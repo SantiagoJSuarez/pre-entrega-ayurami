@@ -20,6 +20,14 @@ main {
   margin-bottom: 5px;
 }
 
+body {
+  position: relative;
+  padding-bottom: 2, 5em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Menu  ---------------------------------------------------------------------- */
 header {
   background-color: #5cac7c;
@@ -65,6 +73,7 @@ footer {
   background-color: #5cac7c;
   justify-content: space-between;
   align-items: center;
+  margin-top: auto;
 }
 
 .footer__derechos {
@@ -136,9 +145,39 @@ footer {
   margin-bottom: 5px;
 }
 
+.body-sobrenosotros {
+  background-image: url(../img/background/verde.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.sobrenosotros {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.sobrenosotros__titulo-articulo {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 2px 2px black;
+}
+.sobrenosotros__articulo2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sobrenosotros__articulo2__img {
+  width: 50%;
+  border-color: white;
+  border-style: solid;
+  border-radius: 20px;
+}
+
 /* Mediaquerie Mobile */
 @media (min-width: 300px) and (max-width: 767px) {
-  /*Mobile Navbar*/
   header {
     display: flex;
     justify-content: center;
@@ -161,6 +200,20 @@ footer {
     width: 50%;
     box-shadow: none;
     margin: 10px;
+  }
+  .sobrenosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .sobrenosotros__articulo2 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .sobrenosotros__articulo2__img {
+    width: 90%;
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -189,6 +242,20 @@ footer {
     margin: 10px;
     border-color: #a59052;
     border-style: solid;
+  }
+  .sobrenosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .sobrenosotros__articulo2 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .sobrenosotros__articulo2__img {
+    width: 90%;
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
   }
 }
 

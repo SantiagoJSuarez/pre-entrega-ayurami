@@ -13,7 +13,7 @@ ul {
 }
 
 p {
-  padding: 5px;
+  padding: 10px;
 }
 
 main {
@@ -110,9 +110,10 @@ footer {
 }
 .main-index__descripcion {
   background-color: #b2baae;
-  font-size: 1rem;
+  font-size: 2rem;
   margin-bottom: 10px;
   margin-right: 10px;
+  line-height: 50px;
 }
 .main-index__imgnegocio {
   box-shadow: 5px 7px #977a50;
@@ -134,6 +135,8 @@ footer {
   text-shadow: 1px 1px white;
 }
 .main-index__novedades__targeta {
+  font-size: 1.5rem;
+  line-height: 40px;
   border-style: solid;
   width: 95%;
   text-align: center;
@@ -155,6 +158,9 @@ footer {
   height: 100%;
   display: flex;
   flex-direction: row;
+  gap: 20px;
+  font-size: 1.3rem;
+  line-height: 30px;
 }
 .sobrenosotros__titulo-articulo {
   color: white;
@@ -163,6 +169,10 @@ footer {
   font-style: italic;
   text-shadow: 2px 2px black;
 }
+.sobrenosotros__objetivos {
+  list-style: circle;
+  padding-bottom: 20px;
+}
 .sobrenosotros__articulo2 {
   display: flex;
   flex-direction: column;
@@ -170,7 +180,7 @@ footer {
   align-items: center;
 }
 .sobrenosotros__articulo2__img {
-  width: 50%;
+  width: 100%;
   border-color: white;
   border-style: solid;
   border-radius: 20px;
@@ -194,7 +204,7 @@ footer {
   border-style: solid;
   border-radius: 20px;
   margin: 8px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: italic;
   display: flex;
   flex-flow: column wrap;
@@ -208,6 +218,13 @@ footer {
   border-radius: 20px;
   border-color: lime;
   border-style: solid;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.productos__targeta__img:hover {
+  width: 240px;
+  box-shadow: 4px 4px 4px 1px rgba(8, 131, 125, 0.603);
 }
 .productos__targeta__lista {
   text-align: center;
@@ -235,12 +252,25 @@ footer {
   border-style: solid;
   border-radius: 10px;
   padding: 20px;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.pedidos__articulo:hover {
+  background-color: black;
+  color: white;
 }
 .pedidos__articulo__img {
   width: 200px;
   height: 200px;
   margin-right: 5px;
   border-radius: 10px;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.pedidos__articulo__img:hover {
+  width: 240px;
+  height: 240px;
+  box-shadow: 4px 4px 4px 1px white;
 }
 
 .contactanos {
@@ -284,6 +314,9 @@ footer {
   .main-index {
     display: flex;
     flex-direction: column;
+  }
+  .main-index__descripcion {
+    font-size: 1rem;
   }
   .main-index__imgnegocio {
     width: 50%;
@@ -361,7 +394,6 @@ footer {
   .pedidos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: blue;
   }
   .pedidos__articulo {
     display: flex;
